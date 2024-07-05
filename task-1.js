@@ -1,6 +1,8 @@
 function makeTransaction(quantity, pricePerDroid) {
-  return quantity * pricePerDroid;
+  return `You ordered ${quantity} droids worth 
+  ${quantity * pricePerDroid} credits!`;
 }
 
-const totalPrice = makeTransaction(5, 3000);
-console.log("You ordered " + "droids worth 15000 credits!");
+console.log(makeTransaction(5, 3000));
+console.log(makeTransaction(3, 1000));
+console.log(makeTransaction(10, 500));
